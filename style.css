@@ -1,33 +1,65 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    overflow: hidden;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 1em;
+body{
+  margin: 0;
 }
 
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  controls: hidden;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1{
+  color:white;
+  font-size: 5em;
+}
 .name{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
-  height: 100px;
-  width: 400px;*/
   z-index: 1;
-  text-align: center;
+  font-family: Helvetica;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 10;	
+.tour-dates-wrap{
+    position:relative;
+    margin-top: 600px;
+    margin-bottom: 300px;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2em;
+    font-family: helvetica;
 }
-.container-vid {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+
+ul{
+  position:relative;
+  display: inline-block;  
+  list-style: none;
+  width:100%;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+.tour-dates-wrap h1{
+  color:black;
+  font-size: 1em;
 }
